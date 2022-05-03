@@ -16,7 +16,8 @@ function App() {
         <Header text={'Kiki\'s Delivery Service'} />
       </header>
       <main>
-        <h1>Welcome {name} please place your order here:</h1>
+        <h1>Welcome {name}</h1> 
+        <p>please place your order here:</p>
       </main>
     </div>
   );
