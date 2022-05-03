@@ -2,9 +2,11 @@ import { useState } from 'react';
 import Header from './Components/Header';
 import OrderNameInput from './OrderNameInput';
 import OrderImages from './OrderImages';
-// import Dropdown from './Dropdown';
+import Dropdown from './Dropdown';
+import InstructionsForm from './InstructionsForm';
 // import InstructionList from './InstructionsList';
 import './App.css';
+import InstructionsList from './InstructionsList';
 
 function App() {
   // set state
@@ -26,6 +28,9 @@ function App() {
         <div className='order-images'>
           <OrderImages foodID={foodID} drinkID={drinkID} sideID={sideID}/>
         </div>
+        <Dropdown setFoodID={setFoodID} setDrinkID={setDrinkID} setSideID={setSideID}/>
+        <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
+        <InstructionsList instructions={instructions}/>
       </main>
     </div>
   );
