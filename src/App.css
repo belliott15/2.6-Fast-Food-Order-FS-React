@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body{
   --color1: #DAD6A6;
   --color2: #C7A079;
@@ -6,10 +7,13 @@ body{
   --color5: #446876;
 
   background-color: var(--color3);
+  height: 100%;
+  font-family: 'Varela Round', Geneva, Tahoma, sans-serif
 }
 
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-header {
@@ -38,8 +42,9 @@ body{
   flex-direction: column;
   margin: 20px;
   align-items: center;
-  justify-content: center;
-
+  justify-content: flex-start;
+  height: 250px;
+  font: 
 }
 
 .order-column img{
@@ -68,9 +73,13 @@ body{
 .App-footer {
   background-color: var(--color5);
   height: 60px;
-  flex-direction: column;
-  align-items: flex-end;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-right: 100px;
 }
