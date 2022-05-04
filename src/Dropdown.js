@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Dropdown({ setFoodID, setDrinkID, setSideID }) {
+export default function Dropdown({ setFoodID, setDrinkID, setAppetizerID }) {
   return (
     <div>
-      <select className='dropdown' onChange={(e) => setSideID(e.target.value)}>
+      <select className='dropdown' onChange={(e) => setAppetizerID(e.target.value)}>
         <option value='1'>Finger Sandwich</option>
         <option value='2'>Artisan Bread</option>
         <option value='3'>Fresh Sushi</option>

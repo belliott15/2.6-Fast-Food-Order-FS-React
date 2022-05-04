@@ -29,6 +29,14 @@ body{
 
 .name-input{
   padding: 20px;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.name-input input{
+  margin-left: 15px;
+  border-radius: 5px;
+  border: solid var(--color5) 2px;
 }
 
 .order-images{
@@ -44,7 +52,8 @@ body{
   align-items: center;
   justify-content: flex-start;
   height: 250px;
-  font: 
+  font-size: 1.5rem; 
+  font-weight: bolder;
 }
 
 .order-column img{
@@ -52,11 +61,23 @@ body{
   padding-top: 40px;
 }
 
+.dropdown{
+  margin: 10px 50px 20px 50px;
+  border-radius: 5px;
+  background-color: var(--color2);
+  color: black;
+  font-size: 1rem;
+  font-weight: 550;
+  border: var(--color5) 2px solid;
+}
+
 .instruction-list{
   width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 .instructions-list-display{
@@ -64,10 +85,23 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px 0px 80px 0px;
 }
 
-.dropdown{
-  margin: 10px 30px 20px 30px;
+.instruction-input{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.instruction-input input{
+  margin-top: 15px;
+  margin-right: 5px;
+  border-radius: 5px;
 }
 
 .App-footer {
@@ -81,5 +115,4 @@ body{
   justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-right: 100px;
 }

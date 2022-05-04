@@ -14,7 +14,7 @@ function App() {
   const [instructions, setInstructions] = useState([]);
   const [name, setName] = useState('Customer');
   const [foodID, setFoodID] = useState(1);
-  const [sideID, setSideID] = useState(1);
+  const [appetizerID, setAppetizerID] = useState(1);
   const [drinkID, setDrinkID] = useState(1); 
 
   return (
@@ -27,9 +27,9 @@ function App() {
         <h1>Welcome {name}</h1> 
         <p>please place your order here:</p>
         <div className='order-images'>
-          <OrderImages foodID={foodID} drinkID={drinkID} sideID={sideID}/>
+          <OrderImages foodID={foodID} drinkID={drinkID} appetizerID={appetizerID}/>
         </div>
-        <Dropdown setFoodID={setFoodID} setDrinkID={setDrinkID} setSideID={setSideID}/>
+        <Dropdown setFoodID={setFoodID} setDrinkID={setDrinkID} setAppetizerID={setAppetizerID}/>
         <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
         <InstructionsList instructions={instructions} name={name}/>
       </main>
