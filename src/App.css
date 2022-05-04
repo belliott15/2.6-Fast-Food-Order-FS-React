@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+  --color1: #DAD6A6;
+  --color2: #C7A079;
+  --color3: #905044;
+  --color4: #9B001f;
+  --color5: #446876;
+
+  background-color: var(--color3);
+  height: 100%;
+  font-family: 'Varela Round', Geneva, Tahoma, sans-serif
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--color5);
   display: flex;
+  height: 60px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -24,15 +27,92 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.name-input{
+  padding: 20px;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.name-input input{
+  margin-left: 15px;
+  border-radius: 5px;
+  border: solid var(--color5) 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.order-images{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.order-column{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 250px;
+  font-size: 1.5rem; 
+  font-weight: bolder;
+}
+
+.order-column img{
+  width: 200px;
+  padding-top: 40px;
+}
+
+.dropdown{
+  margin: 10px 50px 20px 50px;
+  border-radius: 5px;
+  background-color: var(--color2);
+  color: black;
+  font-size: 1rem;
+  font-weight: 550;
+  border: var(--color5) 2px solid;
+}
+
+.instruction-list{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.instructions-list-display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 80px 0px;
+}
+
+.instruction-input{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.instruction-input input{
+  margin-top: 15px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.App-footer {
+  background-color: var(--color5);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
