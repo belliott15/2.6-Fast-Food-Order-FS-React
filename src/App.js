@@ -5,7 +5,9 @@ import OrderImages from './OrderImages';
 import Dropdown from './Dropdown';
 import InstructionsForm from './InstructionsForm';
 import InstructionsList from './InstructionsList';
+import Footer from './Components/Footer';
 import './App.css';
+
 
 function App() {
   // set state
@@ -31,6 +33,9 @@ function App() {
         <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
         <InstructionsList instructions={instructions} name={name}/>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -5,12 +5,11 @@ body{
   --color4: #9B001f;
   --color5: #446876;
 
-  background-color: #905044;
+  background-color: var(--color3);
 }
 
 .App {
   text-align: center;
-  /* background-color: #905044; */
 }
 
 .App-header {
@@ -46,4 +45,32 @@ body{
 .order-column img{
   width: 200px;
   padding-top: 40px;
+}
+
+.instruction-list{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions-list-display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown{
+  margin: 10px 30px 20px 30px;
+}
+
+.App-footer {
+  background-color: var(--color5);
+  height: 60px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
