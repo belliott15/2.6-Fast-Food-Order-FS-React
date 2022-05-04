@@ -30,7 +30,7 @@ function App() {
         </div>
         <Dropdown setFoodID={setFoodID} setDrinkID={setDrinkID} setSideID={setSideID}/>
         <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
-        <InstructionsList instructions={instructions}/>
+        <InstructionsList instructions={instructions} name={name}/>
       </main>
     </div>
   );
