@@ -4,9 +4,8 @@ import OrderNameInput from './OrderNameInput';
 import OrderImages from './OrderImages';
 import Dropdown from './Dropdown';
 import InstructionsForm from './InstructionsForm';
-// import InstructionList from './InstructionsList';
-import './App.css';
 import InstructionsList from './InstructionsList';
+import './App.css';
 
 function App() {
   // set state
